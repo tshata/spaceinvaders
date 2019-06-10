@@ -1,7 +1,8 @@
 #ifndef SPACEOBJECT_H
 #define SPACEOBJECT_H
 
-class SpaceObject {
+class SpaceObject
+{
 
 public:
     SpaceObject(int, int);
@@ -9,14 +10,13 @@ public:
 
     vec2i getPos() const;
     void setPos(vec2i);
-   
+
 private:
     vec2i pos;
 };
 
-
-
-class ObjectField {
+class ObjectField
+{
 
 public:
     void update();
@@ -28,7 +28,6 @@ public:
 private:
     rect field_bounds;
     std::vector<SpaceObject> object_set;
-
 };
 
 #endif
